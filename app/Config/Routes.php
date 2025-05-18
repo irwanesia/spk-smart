@@ -153,8 +153,8 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->group('perhitungan', function ($routes) {
         $routes->get('/', 'Perhitungan::index');
         $routes->post('simpan', 'Perhitungan::simpan');
-        $routes->post('temp/simpan', 'PerhitunganTemp::simpan');
     });
+    $routes->post('perhitungan_temp/simpan', 'PerhitunganTemp::simpan');
 
     $routes->post('ranking/save/(:num)', 'Ranking::save/$1');
 });

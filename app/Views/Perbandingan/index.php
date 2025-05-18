@@ -78,12 +78,12 @@
                     id_mobil: idMobil
                 },
                 success: function(response) {
-                    console.log(response);
                     // Tambahkan logika update badge jumlah mobil
                     let counter = $('#compareCounter');
                     let count = parseInt(counter.text()) || 0;
-                    count++;
                     counter.text(count).show();
+                    count++;
+                    console.log(count);
                     $('#compareBtn').prop('disabled', false);
                 },
                 error: function() {
